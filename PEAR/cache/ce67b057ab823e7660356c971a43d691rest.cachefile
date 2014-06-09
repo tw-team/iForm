@@ -1,0 +1,20 @@
+a:14:{s:7:"attribs";a:4:{s:5:"xmlns";s:36:"http://pear.php.net/dtd/rest.release";s:9:"xmlns:xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:11:"xmlns:xlink";s:28:"http://www.w3.org/1999/xlink";s:18:"xsi:schemaLocation";s:81:"http://pear.php.net/dtd/rest.release     http://pear.php.net/dtd/rest.release.xsd";}s:1:"p";a:2:{s:7:"attribs";a:1:{s:10:"xlink:href";s:21:"/rest/p/http_request2";}s:8:"_content";s:13:"HTTP_Request2";}s:1:"c";s:12:"pear.php.net";s:1:"v";s:10:"2.0.0beta1";s:2:"st";s:4:"beta";s:1:"l";s:11:"BSD License";s:1:"m";s:3:"avb";s:1:"s";s:46:"Provides an easy way to perform HTTP requests.";s:1:"d";s:515:"PHP5 rewrite of HTTP_Request package (with parts of HTTP_Client). Provides
+cleaner API and pluggable Adapters:
+  * Socket adapter, based on old HTTP_Request code,
+  * Curl adapter, wraps around PHP's cURL extension,
+  * Mock adapter, to use for testing packages dependent on HTTP_Request2.
+Supports POST requests with data and file uploads, basic and digest 
+authentication, cookies, managing cookies across requests, proxies, gzip and
+deflate encodings, redirects, monitoring the request progress with Observers...";s:2:"da";s:19:"2011-02-27 22:04:13";s:1:"n";s:664:"Additions and changes:
+  * Implemented cookie jar that allows to store and pass cookies across HTTP
+    requests (see request #18225)
+  * Added several specialized subclasses of HTTP_Request2_Exception, they are
+    now thrown instead of the parent. Also added error codes and possibility
+    to get native error code (as returned by stream_socket_client() and 
+    curl_errno()) (request #16762)
+  * An additional 'sentBody' event is now sent to Observers (request #16828) 
+  * setBody() and addUpload() can now accept file pointers (request #16863)
+
+Bugfixes:
+  * Incorrect check in Socket Adapter prevented Keep-alive from working in
+    some cases (bug #17031)";s:1:"f";s:5:"94516";s:1:"g";s:48:"http://pear.php.net/get/HTTP_Request2-2.0.0beta1";s:1:"x";a:1:{s:7:"attribs";a:1:{s:10:"xlink:href";s:22:"package.2.0.0beta1.xml";}}}

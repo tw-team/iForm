@@ -1,0 +1,21 @@
+a:14:{s:7:"attribs";a:4:{s:5:"xmlns";s:36:"http://pear.php.net/dtd/rest.release";s:9:"xmlns:xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:11:"xmlns:xlink";s:28:"http://www.w3.org/1999/xlink";s:18:"xsi:schemaLocation";s:81:"http://pear.php.net/dtd/rest.release     http://pear.php.net/dtd/rest.release.xsd";}s:1:"p";a:2:{s:7:"attribs";a:1:{s:10:"xlink:href";s:21:"/rest/p/http_request2";}s:8:"_content";s:13:"HTTP_Request2";}s:1:"c";s:12:"pear.php.net";s:1:"v";s:5:"2.1.0";s:2:"st";s:6:"stable";s:1:"l";s:11:"BSD License";s:1:"m";s:3:"avb";s:1:"s";s:46:"Provides an easy way to perform HTTP requests.";s:1:"d";s:514:"PHP5 rewrite of HTTP_Request package (with parts of HTTP_Client). Provides
+cleaner API and pluggable Adapters:
+  * Socket adapter, based on old HTTP_Request code,
+  * Curl adapter, wraps around PHP's cURL extension,
+  * Mock adapter, to use for testing packages dependent on HTTP_Request2.
+Supports POST requests with data and file uploads, basic and digest
+authentication, cookies, managing cookies across requests, proxies, gzip and
+deflate encodings, redirects, monitoring the request progress with Observers...";s:2:"da";s:19:"2012-04-07 12:21:11";s:1:"n";s:688:"New features:
+ * Mock adapter can return responses based on request URL (request #19276)
+ * Support for SOCKS5 proxies, added 'proxy_type' configuration parameter
+   (request #19332)
+ * Proxy configuration may be given as an URL, e.g.
+   $request->setConfig('proxy', 'socks5://localhost:1080');
+
+Other changes and fixes:
+ * Coding standards fixes (request #14990)
+ * Unit tests now run from SVN checkout and under PHPUnit 3.6.x
+ * Explicit dependency on PEAR (until PEAR_Exception is a separate package)
+ * Get rid of track_errors, use a more robust solution (bug #19337)
+ * Additional class_exists() check in setAdapter() (request #19344)
+ * Public suffix list updated to current version";s:1:"f";s:5:"99127";s:1:"g";s:43:"http://pear.php.net/get/HTTP_Request2-2.1.0";s:1:"x";a:1:{s:7:"attribs";a:1:{s:10:"xlink:href";s:17:"package.2.1.0.xml";}}}
