@@ -1,15 +1,15 @@
 <?php
     require_once "Mail.php";
 
-    $from     = "<iuli2507@gmail.com>";
+    $from     = "<tw.team.01@gmail.com>";
     $to       = "<bdnrsc@yahoo.com>";
-    $subject  = "IA PULA";
+    $subject  = "[iForms]";
     $body     = "Hi,\n\nHow are you?";
 
     $host     = "ssl://smtp.gmail.com";
     $port     = "465";
-    $username = "iuli2507@gmail.com";  //<> give errors
-    $password = "hedonist";
+    $username = "tw.team.01@gmail.com";  //<> give errors
+    $password = "1-tw-team";
 
     $headers = array(
         'From'    => $from,
